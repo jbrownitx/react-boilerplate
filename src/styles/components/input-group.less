@@ -1,0 +1,22 @@
+.input-group {
+	display: flex;
+	margin-bottom: @size-l;
+
+	@media (@device-mobile) {
+		flex-direction: column;
+		margin-bottom: @size-m;
+	}
+}
+
+.input-group__item {
+	margin-right: @size-s;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	@media (@device-mobile) {
+		margin-right: 0;
+		margin-bottom: @size-s;
+	}
+}
